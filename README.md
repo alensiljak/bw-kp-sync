@@ -20,4 +20,16 @@ These exported files can then be parsed and compared.
 
 # Technology
 Python.
-Python seems good at manipulating data and reading different data sources. It is easily maintainable and seems a perfect fit for a very small project.
+Python seems good at manipulating data and reading different data sources. It is easily 
+maintainable and seems a perfect fit for a very small project.
+
+# Process
+
+Export BitWarden JSON using CLI.
+
+Export KeePass XML, manually from GUI.
+```sh
+keepassxc-cli export --format|-f xml -k|--key-file <keyfile> <database.kdbx> > backup.xml
+```
+
+Compare the  files.

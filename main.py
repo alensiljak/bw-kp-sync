@@ -3,12 +3,18 @@
 '''
 
 from src.keepass_xml_parser import KeePassXmlParser
+from src import kpcli
 
 
 def main():
     '''
     entry point
     '''
+    # 1. export KeePass database.
+    kpcli.export()
+    # 2. export BitWarden database.
+
+    # 3. compare.
     kp = KeePassXmlParser()
     kp.echo()
 
